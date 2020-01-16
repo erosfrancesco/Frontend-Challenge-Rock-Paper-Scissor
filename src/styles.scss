@@ -1,22 +1,33 @@
 // Google Fonts
 @import url(https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:600,700);
 
-// Font Variables
+
+// Variables
 $barlow-font: 'Barlow Semi Condensed', serif;
-
-// Styles
-// body {
-//   font-family: $barlow-font;
-//   font-weight: 600;
-// }
-
 $gradient1: hsl(237, 49%, 15%);
 $gradient2: hsl(214, 47%, 23%);
+$light-background: whitesmoke;
 
-body {
+
+// Mixins
+@mixin barlow-text {
     font-family: $barlow-font;
     font-weight: 600;
-    color: whitesmoke;
+    color: $light-background;
+}
+
+@mixin slick-border {
+    border-radius: 10px;
+    border: solid 2px;
+    border-color: rgba($color: $light-background, $alpha: 0.3)
+}
+
+
+// Body
+body {
+    @include barlow-text;
+
+    text-align: -webkit-center;
     
     // TODO: - To redo!
     background: $gradient1; /* Old browsers */

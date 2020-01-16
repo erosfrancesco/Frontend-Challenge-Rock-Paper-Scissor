@@ -1,0 +1,24 @@
+@import "../../../styles.scss";
+
+.wrapper {
+    @include slick-border;
+    width: 60%;
+    display: inline-flex
+}
+
+.types {
+    width: 70%;
+    text-align: left;
+    margin: 15px;
+    margin-left: 20px;
+}
+
+.types h2 {
+    margin: -1%;
+}
+
+.score {
+    background-color: $light-background;
+    margin: 0.5%;
+    width: 30%;
+}
