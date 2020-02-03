@@ -1,9 +1,10 @@
 <div class="wrapper">
+
   <div class="types">
-    <h2 *ngFor="let type of availableTypes">
-      {{type}}
-    </h2>
+    <div *ngFor="let choise of game.availableChoises">
+      <p> {{choise}} </p> 
+    </div>
   </div>
-  <div class="score">
-  </div>
+
+  <app-game-score></app-game-score>
 </div>

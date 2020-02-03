@@ -1,0 +1,12 @@
+// app-choose-component {
+//     position: absolute;
+// }
+
+img {
+    position: fixed;
+    top: 43%;
+    left: calc(50% - (27vh / 2));
+    width: 35vh;
+    height: 35vh;
+    z-index: -1;
+}

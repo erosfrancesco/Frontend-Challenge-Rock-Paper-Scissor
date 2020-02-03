@@ -1,0 +1,18 @@
+/*STUB***/
+@import "../../../../styles.scss";
+:host {
+    color: $dark-text;
+    background-color: $light-background;
+    border-radius: 5px;
+}
+
+p {
+    font-size: 2vh;
+    margin-top: 3vh;
+    line-height: 0vh;
+}
+h1 {
+    font-size: 8vh;
+    line-height: 0vh;
+    margin-top: 5vh;
+}

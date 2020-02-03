@@ -7,6 +7,7 @@ $barlow-font: 'Barlow Semi Condensed', serif;
 $gradient1: hsl(237, 49%, 15%);
 $gradient2: hsl(214, 47%, 23%);
 $light-background: whitesmoke;
+$dark-text: hsl(214, 47%, 23%);
 
 
 // Mixins
@@ -23,9 +24,14 @@ $light-background: whitesmoke;
 }
 
 
+
 // Body
 body {
     @include barlow-text;
+
+
+    width: 100% !important;
+    height: 100% !important;
 
     text-align: -webkit-center;
     
@@ -35,3 +41,16 @@ body {
     background: -webkit-radial-gradient(center, ellipse cover, $gradient2 0%, $gradient1 100%); /* Chrome10-25,Safari5.1-6 */
     background: radial-gradient(ellipse center farthest-corner, $gradient2 0%, $gradient1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
+
+// app-root {
+//     width: 100vh !important;
+//     height: 100vw !important;
+
+//     // TODO: - To redo!
+//     background: $gradient1; /* Old browsers */
+//     background: -moz-radial-gradient(center, ellipse cover, $gradient2 0%, $gradient1 100%); /* FF3.6-15 */
+//     background: -webkit-radial-gradient(center, ellipse cover, $gradient2 0%, $gradient1 100%); /* Chrome10-25,Safari5.1-6 */
+//     background: radial-gradient(ellipse center farthest-corner, $gradient2 0%, $gradient1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+// }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
